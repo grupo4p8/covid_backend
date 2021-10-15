@@ -2,7 +2,7 @@
 Backend Postgresql django
 
 
-TABLA pais     ======>>>  [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/102c793bef9584e5f203?action=collection%2Fimport)
+TABLA pais     ======>>>     [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/102c793bef9584e5f203?action=collection%2Fimport)
 
 
 TABLA vacuna   ======>>>  [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/0a5514f9ca8d60b8ae8f?action=collection%2Fimport)
