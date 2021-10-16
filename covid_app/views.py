@@ -127,6 +127,7 @@ def personaApi(request,id=0):
         return JsonResponse("Deleted Successfully",safe=False)
 
 
+
 ###############
 ## solicitud ##
 ###############
