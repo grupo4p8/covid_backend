@@ -84,14 +84,14 @@ def tipodocApi(request,id=0):
         return JsonResponse("Failed to Add",safe=False)
     elif request.method=='PUT':
         tipodoc_data=JSONParser().parse(request)
-        Tipodoc=tipodoc.objects.get(tipodoc_id=tipodoc_data['tipodoc_id'])
+        Tipodoc=tipodoc.objects.get(docum_tipo_id=tipodoc_data['docum_tipo_id'])
         tipodoc_serializer=tipodocSerializer(Tipodoc,data=tipodoc_data)
         if tipodoc_serializer.is_valid():
             tipodoc_serializer.save()
             return JsonResponse("Updated Successfully",safe=False)
         return JsonResponse("Failed to Update")
     elif request.method=='DELETE':
-        Tipodoc=tipodoc.objects.get(tipodoc_id=id)
+        Tipodoc=tipodoc.objects.get(docum_tipo_id=id)
         Tipodoc.delete()
         return JsonResponse("Deleted Successfully",safe=False)
 
@@ -115,14 +115,14 @@ def personaApi(request,id=0):
         return JsonResponse("Failed to Add",safe=False)
     elif request.method=='PUT':
         persona_data=JSONParser().parse(request)
-        Persona=persona.objects.get(persona_id=persona_data['persona_id'])
+        Persona=persona.objects.get(psn_id=persona_data['psn_id'])
         persona_serializer=personaSerializer(Persona,data=persona_data)
         if persona_serializer.is_valid():
             persona_serializer.save()
             return JsonResponse("Updated Successfully",safe=False)
         return JsonResponse("Failed to Update")
     elif request.method=='DELETE':
-        Persona=persona.objects.get(persona_id=id)
+        Persona=persona.objects.get(psn_id=id)
         Persona.delete()
         return JsonResponse("Deleted Successfully",safe=False)
 
